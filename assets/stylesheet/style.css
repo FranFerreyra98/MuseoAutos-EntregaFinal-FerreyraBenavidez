@@ -14,9 +14,26 @@
 
 .header {
   grid-area: header;
+  width: 100%;
   display: flex;
   justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.titulo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.nav_bar {
+  grid-area: navbar;
+  display: flex;
   align-items: center;
+  justify-content: right;
+  padding-right: 20px;
   animation-name: aparecer;
   animation-duration: 4s;
   animation-iteration-count: 1;
@@ -37,7 +54,7 @@
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: flex-start;
   gap: 20px;
