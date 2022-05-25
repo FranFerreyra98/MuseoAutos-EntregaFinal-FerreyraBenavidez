@@ -5,6 +5,7 @@
 
 .body {
   display: grid;
+  margin: 10px;
   gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px auto auto auto auto;
@@ -26,10 +27,24 @@
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  justify-content: left;
   padding-right: 10px;
   animation-name: aparecer;
   animation-duration: 4s;
   animation-iteration-count: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
 }
 
 .banner {
@@ -44,7 +59,7 @@
   grid-area: qs;
   display: flex;
   height: 600px;
-  width: 1000px;
+  width: 800px;
   padding: 15px;
   border-radius: 3;
   align-self: center;
@@ -54,7 +69,7 @@
 .museo {
   grid-area: museo;
   height: 600px;
-  width: 1000px;
+  width: 800px;
   padding: 15px;
   border-radius: 3;
   align-items: center;
@@ -64,10 +79,18 @@
 }
 
 .footer {
-  width: 100%;
+  width: 423px;
   grid-area: footer;
   display: flex;
   gap: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: 100%;
+  }
 }
 
 .body__autos {
