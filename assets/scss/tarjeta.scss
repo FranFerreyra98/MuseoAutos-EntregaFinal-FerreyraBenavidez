@@ -1,0 +1,8 @@
+.qs{
+    height: map-get($tarjeta, alto );
+    width: map-get($tarjeta, ancho );
+    padding: map-get($tarjeta, margen_int );
+    border-radius: map-get($tarjeta, radio );
+    align-items: map-get($tarjeta, alineacion);
+    justify-content: map-get($tarjeta, justificado );
+}

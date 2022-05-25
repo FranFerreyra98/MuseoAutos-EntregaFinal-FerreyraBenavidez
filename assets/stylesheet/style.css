@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px auto auto auto auto;
+  grid-template-areas: "header navbar " "banner banner" "qs     qs" "museo  museo" "footer footer";
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 10px;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.banner {
+  grid-area: banner;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.qs {
+  grid-area: qs;
+  display: flex;
+  height: 600px;
+  width: 1000px;
+  padding: 15px;
+  border-radius: 3;
+  align-self: center;
+  justify-self: center;
+}
+
+.museo {
+  grid-area: museo;
+  height: 600px;
+  width: 1000px;
+  padding: 15px;
+  border-radius: 3;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.footer {
+  width: 100%;
+  grid-area: footer;
+  display: flex;
+  gap: 20px;
+}
+
+.body__autos {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px auto auto auto;
+  grid-template-areas: "header navbar " "titulo titulo" "main   main" "footer footer";
+}
+
+.body__historia {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px auto auto auto;
+  grid-template-areas: "header navbar " "banner banner" "cards  cards" "footer footer";
+}
