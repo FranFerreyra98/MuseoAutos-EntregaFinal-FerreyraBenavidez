@@ -11,9 +11,11 @@
     display: grid;
     margin: 10px;
     gap: 10px;
+    height: auto;
+    width: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px auto auto auto auto;
-    grid-template-areas: "header navbar "
+    grid-template-areas: "header header "
                          "banner banner"
                          "qs     qs"
                          "museo  museo"
@@ -80,6 +82,7 @@
     align-items: center;
 }
 
+
 .qs {
     grid-area: qs;
     display: map-get($tarjeta, displei );
@@ -90,8 +93,6 @@
     align-self: map-get($tarjeta, alineacion);
     justify-self: map-get($tarjeta, justificado );
 }
-
-
 
 .museo {
     grid-area: museo;

@@ -14,58 +14,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Museo de Autos</title>
 </head>
-<body class="body container" >
+<body class="body grid-container" >
 
     <header class="header">
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="">
-                <h1>Museo de Autos</h1>
-            </div> 
-        </div>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+                  <div class="container-fluid alto-nav">
+                        <a class="navbar-brand" href="#">
+                              <img src="#" alt="logomuseo" width="80" height="80">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse cont-enlaces" id="navbarNav">
+                              <ul class="navbar-nav negrita ms-auto">
+                                    <li class="nav-item"><a class="nav-link pb-0 active" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link pb-0" href="#"></a>Autos</li>
+                                    <li class="nav-item"><a class="nav-link pb-0" href="#">Historia</a></li>
+                                    <li class="nav-item"><a class="nav-link pb-0" href="#">Contacto</a></li>
+                                    <li class="nav-item"><a class="nav-link pb-0" href="#">Restaurante</a></li>
+                              </ul>
+                        </div>
+                  </div>
+            </nav>
+      </div>
     
     </header>
 
     
-    <div class="nav_bar">
-        <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                <img src="#" width="30" height="30" alt="">
-                </a>
-                
-                <!-- Enlaces -->
-                <div class="collapse navbar-collapse" id="opciones">   
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Autos</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Restaurante</a>
-                    </li>            
-                </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
+    
     
     
 
-    <section class="banner">
+    <section class="banner" aria-expanded="false">
         <img src="/assets/img/Banner.jpg" alt="banner" height="400px" width="100%">
     </section>
 
-    <section class="qs container">          
+    <section class="qs container-fluid py-5">          
         <div class="col-xs-12 col-md-12 col-xl-12 gap 3 p-5">
             <h2>Quienes Somos?</h2>
 
@@ -87,7 +72,7 @@
         </div>
     </section>
             
-    <section class="museo container">
+    <section class="museo container p-0">
         <div class="col-xs-12 col-md-12 col-xl-12 gap 3 p-5">
             <h2>El Museo</h2>
 

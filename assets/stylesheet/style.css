@@ -7,13 +7,11 @@
   display: grid;
   margin: 10px;
   gap: 10px;
+  height: auto;
+  width: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px auto auto auto auto;
-  grid-template-areas: "header navbar "
- "banner banner"
- "qs     qs"
- "museo  museo"
- "footer footer";
+  grid-template-areas: "header header " "banner banner" "qs     qs" "museo  museo" "footer footer";
 }
 
 .header {
@@ -78,8 +76,9 @@ nav ul li {
 
 .qs {
   grid-area: qs;
-  height: 600px;
-  width: 800px;
+  display: flex;
+  height: 100%;
+  width: 80%;
   padding: 15px;
   border-radius: 3;
   align-self: center;
@@ -88,8 +87,8 @@ nav ul li {
 
 .museo {
   grid-area: museo;
-  height: 600px;
-  width: 800px;
+  height: 100%;
+  width: 80%;
   padding: 15px;
   border-radius: 3;
   align-items: center;
@@ -118,10 +117,7 @@ nav ul li {
   gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px auto auto auto;
-  grid-template-areas: "header navbar "
- "titulo titulo"
- "main   main"
- "footer footer";
+  grid-template-areas: "header navbar " "titulo titulo" "main   main" "footer footer";
 }
 
 .body__historia {
@@ -129,8 +125,5 @@ nav ul li {
   gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px auto auto auto;
-  grid-template-areas: "header navbar "
- "banner banner"
- "cards  cards"
- "footer footer";
+  grid-template-areas: "header navbar " "banner banner" "cards  cards" "footer footer";
 }
