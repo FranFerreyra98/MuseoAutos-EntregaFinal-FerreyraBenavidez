@@ -76,6 +76,10 @@
     border-radius: 10px;
 }
 
+.imgmuseo{
+    border-radius: 10px;
+}
+
 .museo {
     grid-area: museo;
     height: map-get($tarjeta, alto );
@@ -108,13 +112,56 @@
 .body__autos {
     display: grid;
     gap: 10px;
+    height: auto;
+    width: auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px auto auto auto;
-    grid-template-areas: "header navbar "
-                         "titulo titulo"
+    grid-template-rows: 25px auto auto auto;
+    grid-template-areas: "header header "
+                         "banner banner"
                          "main   main"
                          "footer footer";
 }
+
+.header{
+    grid-area: header;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+     
+}
+
+.banner{
+    grid-area: banner;
+    height: auto;
+    padding: 0%;
+    width: 100%;
+    gap: 15px;
+}
+
+.main{
+    grid-area: main;
+    height: map-get($tarjeta, alto );
+    width: map-get($tarjeta, ancho );
+    padding: map-get($tarjeta, margen_int );
+    border-radius: map-get($tarjeta, radio );
+    align-self: map-get($tarjeta, alineacion);
+    justify-self: map-get($tarjeta, justificado );
+}
+
+.footer{
+    grid-area: footer;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+
 
 .body__historia {
     display: grid;
