@@ -9,8 +9,12 @@
   height: auto;
   width: auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25px auto auto auto auto;
-  grid-template-areas: "header header " "banner banner" "qs     qs" "museo  museo" "footer footer";
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header header "
+ "banner banner"
+ "qs     qs"
+ "museo  museo"
+ "footer footer";
 }
 
 .header {
@@ -63,11 +67,7 @@
   justify-self: center;
 }
 
-.imgqs {
-  border-radius: 10px;
-}
-
-.imgmuseo {
+.img {
   border-radius: 10px;
 }
 
@@ -92,20 +92,17 @@
   justify-self: center;
 }
 
-@media (min-width: 768px) {
-  .footer {
-    width: 100%;
-  }
-}
-
 .body__autos {
   display: grid;
   gap: 10px;
   height: auto;
   width: auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25px auto auto auto;
-  grid-template-areas: "header header " "banner banner" "main   main" "footer footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header "
+ "banner banner"
+ "main   main"
+ "footer footer";
 }
 
 .header {
@@ -149,7 +146,137 @@
 .body__historia {
   display: grid;
   gap: 10px;
+  height: auto;
+  width: auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px auto auto auto;
-  grid-template-areas: "header navbar " "banner banner" "cards  cards" "footer footer";
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header"
+ "banner banner"
+ "main   main"
+ "footer footer";
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.banner {
+  grid-area: banner;
+  height: auto;
+  padding: 0%;
+  width: 100%;
+  gap: 15px;
+}
+
+.main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  grid-area: footer;
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.body__contacto {
+  display: grid;
+  gap: 10px;
+  height: auto;
+  width: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header"
+ "banner banner"
+ "main   main"
+ "footer footer";
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.banner {
+  grid-area: banner;
+  height: auto;
+  padding: 0%;
+  width: 100%;
+  gap: 15px;
+}
+
+.main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  grid-area: footer;
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.body__restaurante {
+  display: grid;
+  gap: 10px;
+  height: auto;
+  width: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header header"
+ "banner banner"
+ "main   main"
+ "footer footer";
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.banner {
+  grid-area: banner;
+  height: auto;
+  padding: 0%;
+  width: 100%;
+  gap: 15px;
+}
+
+.main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  grid-area: footer;
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  justify-self: center;
 }
