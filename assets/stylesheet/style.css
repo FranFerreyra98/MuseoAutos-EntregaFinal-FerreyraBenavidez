@@ -10,11 +10,7 @@
   width: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "header header "
- "banner banner"
- "qs     qs"
- "museo  museo"
- "footer footer";
+  grid-template-areas: "header header " "banner banner" "qs     qs" "museo  museo" "footer footer";
 }
 
 .header {
@@ -23,9 +19,6 @@
   height: 40px;
   display: flex;
   justify-content: center;
-  animation-name: aparecer;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
 }
 
 .navbar {
@@ -35,9 +28,6 @@
   flex-direction: row-reverse;
   justify-content: left;
   padding-right: 10px;
-  animation-name: aparecer;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
 }
 
 .navbar ul {
@@ -71,6 +61,11 @@
   border-radius: 10px;
 }
 
+.cont-img img {
+  border-radius: 40px;
+  box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.32);
+}
+
 .museo {
   grid-area: museo;
   height: 100%;
@@ -81,6 +76,29 @@
   justify-content: center;
   align-self: center;
   justify-self: center;
+}
+
+.btn {
+  padding: .6rem 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #393D40;
+  color: #fff;
+  font-size: .75rem;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(#69645f 10%, #393D40 100%);
+}
+
+.btn:hover, .btn:focus {
+  background-color: #393D40;
+  background-image: linear-gradient(#393D40 10%, #69645f 100%);
+}
+
+.btn:active {
+  background-color: #393D40;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2) inset;
+  background-image: linear-gradient(#393D40 10%, #69645f 100%);
 }
 
 .footer {
@@ -99,10 +117,7 @@
   width: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header "
- "banner banner"
- "main   main"
- "footer footer";
+  grid-template-areas: "header header " "banner banner" "main   main" "footer footer";
 }
 
 .header {
@@ -150,10 +165,7 @@
   width: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header"
- "banner banner"
- "main   main"
- "footer footer";
+  grid-template-areas: "header header" "banner banner" "main   main" "footer footer";
 }
 
 .header {
@@ -196,10 +208,7 @@ footer {
   width: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header"
- "banner banner"
- "main   main"
- "footer footer";
+  grid-template-areas: "header header" "banner banner" "main   main" "footer footer";
 }
 
 .header {
@@ -242,10 +251,7 @@ footer {
   width: auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header header"
- "banner banner"
- "main   main"
- "footer footer";
+  grid-template-areas: "header header" "banner banner" "main   main" "footer footer";
 }
 
 .header {
